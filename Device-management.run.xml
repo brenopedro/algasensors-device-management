@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Device-management" type="Application" factoryName="Application">
+    <envs>
+      <env name="tsid.node" value="7" />
+      <env name="tsid.node.count" value="32" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="com.algaworks.algasensors.device_management.DeviceManagementApplication" />
+    <module name="device-management.main" />
+    <option name="VM_PARAMETERS" value="-XX:MaxRAM=256m" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/microsservices/device-management" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
