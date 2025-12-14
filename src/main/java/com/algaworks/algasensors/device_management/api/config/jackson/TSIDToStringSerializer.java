@@ -1,4 +1,4 @@
-package com.algaworks.algasensors.device_management.api.jackson;
+package com.algaworks.algasensors.device_management.api.config.jackson;
 
 import io.hypersistence.tsid.TSID;
 import org.springframework.boot.jackson.JacksonComponent;
