@@ -1,6 +1,5 @@
 package com.algaworks.algasensors.device_management.api.client;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
@@ -10,10 +9,7 @@ import org.springframework.web.client.RestClient;
 import java.time.Duration;
 
 @Component
-@RequiredArgsConstructor
 public class RestClientFactory {
-
-    private final RestClient restClient;
 
     public RestClient temperatureMonitoringRestClient() {
         return RestClient.builder()
