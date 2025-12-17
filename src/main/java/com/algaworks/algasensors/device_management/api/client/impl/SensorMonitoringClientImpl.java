@@ -13,7 +13,8 @@ public class SensorMonitoringClientImpl implements SensorMonitoringClient {
     private final RestClient restClient;
 
     public SensorMonitoringClientImpl() {
-        restClient = RestClient.builder().baseUrl("http://localhost:8082")
+        restClient = RestClient.builder()
+                .baseUrl("http://localhost:8082")
                 .defaultStatusHandler(HttpStatusCode::isError,
                         (request, response) -> {
                             throw new SensorMonitoringClientBadGatewayException();
